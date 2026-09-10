@@ -236,7 +236,7 @@ PRODUCT_PACKAGES += \
     FrameworkOverlayMT6879 \
     SettingsOverlayMT6879 \
     SystemUIOverlayMT6879 \
-    Launcher3DeviceOverlay \
+    NexusLauncherDeviceOverlay \
     NfcOverlayMT6879
 
 PRODUCT_PACKAGES += \
