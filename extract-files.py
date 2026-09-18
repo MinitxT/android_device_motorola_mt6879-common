@@ -61,6 +61,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v31.so')
         .replace_needed('libutils.so', 'libutils-v32.so')
         .add_needed('android.hardware.sensors@1.0-convert-shared.so'),
+    (
+        'vendor/lib64/libcodec2_mtk_vdec.so',
+        'vendor/lib64/libcodec2_mtk_venc.so'
+    ): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter-mtk.so'),
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
     ('vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so', 'vendor/bin/hw/android.hardware.gnss-service.mediatek'): blob_fixup()
